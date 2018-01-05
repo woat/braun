@@ -1,0 +1,73 @@
+:root {
+  --white: #ededed;
+  --cement: #848484;
+  --grey: #000000cc;
+  --red: #ff5657;
+}
+
+html {
+  background-color: var(--grey);
+}
+
+body {
+  padding: 3em 6em;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white);
+}
+
+header > a {
+  color: var(--cement);
+  text-decoration: none;
+}
+
+header > a:first-child {
+  margin-right: auto;
+}
+
+header > * + * {
+  margin-left: 1em;
+}
+
+.logo {
+  color: var(--white);
+  font-variant: small-caps;
+}
+
+.active {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.fa-circle {
+  color: var(--cement)
+}
+
+.first-section {
+  border: solid;
+  border-color: dodgerblue;
+  display: grid;
+  grid-template: 4fr 4fr 2fr 2fr / 1fr 6fr 5fr; 
+}
+
+.camera {
+  grid-area: 2 / 3;
+}
+
+.buy {
+  grid-area: 3 / 2;
+}
+
+.pagination {
+  grid-area: 4 / 3;
+}
+
+.social {
+  grid-area: 4 / 1;
+}
+
+.headline {
+  grid-area: 2 / 2;
+}
