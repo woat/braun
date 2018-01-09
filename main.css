@@ -391,6 +391,7 @@ h4 {
   font-weight: 700;
   font-size: 0.7em;
   padding: 12px 28px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 92% 100%, 0 100%);
 }
 
 .watch-image {
@@ -426,19 +427,40 @@ h4 {
   height: 95vh; 
   background-color: var(--red);
   display: grid;
+  background-size: cover;
+  background-position: center;
   grid-template: 1fr 1fr 1fr / 6.2fr 4fr;
   background-image: url('bg.jpeg');
 }
 
 .health3 {
   grid-area: 1 / 2;
-  color: white;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.8em;
 }
 
 .statement3 {
   grid-area: 2 / 2;
+  color: var(--white);
+  font-size: 1em;
+}
+
+.statement3 > p {
+  border-left: 1px solid var(--white);
+  padding-left: 3em;
 }
 
 .explore {
   grid-area: 3 / 2;
+}
+
+.explore > a {
+  background-color: var(--white);
+  color: var(--grey);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.7em;
+  padding: 12px 28px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 100%);
 }
